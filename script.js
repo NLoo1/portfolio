@@ -10,9 +10,6 @@ projs.forEach(div => div.addEventListener('click', isHovered));
 function isHovered(){
     console.log("Hello");
     console.log(this);
-
-    this.style.width = "0";
-    this.style.height = "0";
     
 
 }
