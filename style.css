@@ -1,110 +1,139 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-    
+html{
+    scroll-behavior: smooth;
 }
 
-header{
-    background-color: black;
+.links{
+    /* box-sizing: inherit; */
+    background-color: red;
+    display: flex;
     width: 100%;
-    text-align: right;
-    font-size: 30px;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+}
+
+.links a{
     color: white;
 }
 
-header span, a{
-    padding: 1%;
-    color: white;
+.links ul{
+    list-style: none;
+    display: flex;
+    /* margin-block-start: 1em; */
+    /* margin-block-end: 1em; */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-right: 2rem;
 }
 
-header span:hover{
-    color: lightblue;
-    transition: 0.05s;
+.links a{
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
-#intro{
-    padding: 10%;
-    background-color: skyblue;
+
+.links a:hover{
+    color: blue;
+    transition: 0.05;
+}
+
+.name{
+    height: 100vh;
     text-align: center;
-    background-image: url("./images/leaves.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
-    border-bottom: 5px;
-    border-style: solid;
-}
-
-#name-banner{
     align-content: center;
-    margin: auto;
-    padding: 2%;
-    background-color: black;
-    border-radius: 2px;
-    border-style:inset;
+    justify-content: center;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
 }
 
-#name-banner h1{
+.name h1{
+    font-size: 5rem;
     color: white;
-    font-size: 500%;
 }
 
-#projects{
-    background-color:lightskyblue;
-    text-align: center;
+.name h2{
+    font-size: 3rem;
+    color: red;
+}
+
+.projects-frame{
+    background-color: skyblue;
+    padding: 10rem 2rem;
+}
+
+.projects-frame h2{
     font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 200%;
-    padding: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.4rem solid white;
+    max-width: 640px;
 }
 
-#projects-frame {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
-    
-#proj1 { 
-    grid-area: 1 / 2 / 3 / 3; 
-}
-#proj2 { 
-    grid-area: 1 / 3 / 3 / 3; 
-}
-#proj3 { 
-    grid-area: 3 / 2 / 4 / 3; 
-}
-#proj4 { 
-    grid-area: 3 / 4 / 4 / 3; 
-}
-
-.proj{
-    height: 250px;
-    width: 250px;
-    background-color: #555;
-    place-self: center;
-    border-color: black;
+.project h3{
+    justify-content: center;
+    align-content: center;
+    font-size: 2rem;
+    border-radius: 1rem;
     border-style: solid;
-    border-radius: 2px;
-
-    text-align: center;
-    font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 100%;
+    background-color: gainsboro;
 }
 
+.project{
+    justify-content: center;
+    align-content: center;
+    color: black;
+    padding: 2rem;
+}
 
-.proj:hover{
-    height: 300px;
-    width: 300px;
-    transition: 0.5s;
+.project:hover{
+    transition: 0.75s;
+    background-color: white;
+    border-radius: 5rem;
+    transform: scale(105%);
 }
 
 footer{
     text-align: center;
-    background-color: lightblue;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    background-color: gray;
+}
+
+footer span{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.links-frame{
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    background-color: #303841;
+}
+
+.links-frame h1{
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+.links-frame a{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.links-frame a:hover{
+    transition: 0.5s;
+    color: green;
+    transform: translate(0px, 2rem);
 }
